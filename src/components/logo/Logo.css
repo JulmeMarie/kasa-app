@@ -1,0 +1,49 @@
+#logo-header .logo-k{
+    width:55px;
+    height:63px;
+}
+
+#logo-header .logo-a1{
+    width:47px;
+    height:54px;
+}
+
+#logo-header .logo-s{
+    width:41px;
+    height:49px;
+}
+
+#logo-header .logo-a2{
+    width:42px;
+    height:49px;
+}
+
+
+#logo-header svg{
+    margin-right: 0.5rem;
+}
+
+
+#logo-footer .logo-k{
+    width:32px;
+    height:36px;
+}
+
+#logo-footer .logo-a1{
+    width:27px;
+    height:31px;
+}
+
+#logo-footer .logo-s{
+    width:23px;
+    height:28px;
+}
+
+#logo-footer .logo-a2{
+    width:24px;
+    height:28px;
+}
+
+#logo-footer svg{
+    margin-right: 0.2rem;
+}

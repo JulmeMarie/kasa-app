@@ -1,0 +1,24 @@
+.text-404 {
+    width: 100%;
+    font-size: 20rem;
+    color: #FF6060;
+    text-align: center;
+}
+
+.description-404 {
+    width: 100%;
+    font-size: 2rem;
+    color: #FF6060;
+    text-align: center;
+}
+
+.link-404 {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.link-404 a{
+    color: #FF6060;
+}

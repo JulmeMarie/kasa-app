@@ -1,0 +1,17 @@
+#logo-footer{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.page-footer{
+    margin-top: 2rem;
+    background-color: #000000;
+    height: 12rem;
+    color: white;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+.text-footer{
+    font-size: 1.3rem;
+}

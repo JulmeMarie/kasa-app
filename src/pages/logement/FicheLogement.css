@@ -1,0 +1,68 @@
+._Body{
+    position: relative;
+    color: #FF6060;
+}
+
+.title-logement{
+    margin-left: 0rem;
+    width: fit-content;
+    text-align: left;
+}
+
+.host-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.host-logement{
+    position: absolute;
+    right: 0rem;
+    margin-top: -4rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.host-name{
+    line-height: 60px;
+    margin-right: 1rem;
+}
+
+.rate-logement{
+    position: absolute;
+    right: 0;
+    margin-top: 2rem;
+    z-index: 100;
+}
+
+.rate-logement i{
+ font-size: 1.5rem;
+ margin-left: 0.5rem;
+ 
+}
+
+.content-logement{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.tag-list{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+}
+
+.content-logement .accordion-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+.description-accordion{
+  width: 45%;
+}
+.equipement-accordion{
+    width: 45%;
+}

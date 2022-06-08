@@ -1,0 +1,11 @@
+.banner-apropos{
+    background-image: url('../../../public/banner-apropos.jpg');
+    background-position-y: 37%;
+}
+
+.apropos.accordion-list{
+    margin-top: 2rem;
+    width: 80%;
+
+    margin-left: 10%;
+}

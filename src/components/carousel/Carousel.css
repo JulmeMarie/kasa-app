@@ -1,0 +1,58 @@
+.carousel{
+    height: 415px;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+    color: white;
+}
+
+.carousel-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel-image.active{
+    display: block;
+    animation:showImage 1s
+}
+
+
+
+.direction, .indication{
+    position: absolute;
+    z-index: 100;
+}
+
+.direction{
+    font-size: 4rem;
+    top: 50%;
+    transform: translate(0%, -50%); /* décalage de 50% de sa propre taille */
+    cursor: pointer;
+}
+
+.direction.fa-chevron-left{
+    left: 1rem;
+   
+}
+
+.direction.fa-chevron-right{
+    right: 1rem;
+}
+
+.indication{
+    bottom: 1rem;
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(0%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+@keyframes showImage {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;  
+    }
+}
