@@ -10,6 +10,12 @@ import './FicheLogement.css';
 import Accordion from '../../components/accordion/Accordion';
 import Footer from '../../components/footer/Footer';
 
+
+/**
+ * Auteur : JULME Marie Wilnie
+ * Date : 02/06/2022
+ * But : Ce coomposant permet d'afficher la page "fiche logement" de l'application
+ */
 export default function FicheLogement() {
     const { id } = useParams();
     const navigate = useNavigate();

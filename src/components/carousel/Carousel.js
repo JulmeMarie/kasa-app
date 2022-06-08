@@ -1,6 +1,12 @@
 import './Carousel.css';
 import { useState } from "react";
 
+
+/**
+ * Auteur : JULME Marie Wilnie
+ * Date : 04/06/2022
+ * But : Ce coomposant permet d'afficher un carousel avec les images d'un logement
+ */
 export default function Carousel(props) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

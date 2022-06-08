@@ -4,6 +4,11 @@ import Accordion from "../../components/accordion/Accordion";
 import './Apropos.css';
 import Footer from "../../components/footer/Footer";
 
+/**
+ * Auteur : JULME Marie Wilnie
+ * Date : 02/06/2022
+ * But : Ce coomposant permet d'afficher la page "apropos" de l'application
+ */
 export default function Apropos() {
     return (
         <>

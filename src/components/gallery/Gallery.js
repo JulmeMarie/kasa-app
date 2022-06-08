@@ -3,6 +3,12 @@ import './Gallery.css';
 import data from "../../data/logement.json";
 import { useState } from 'react';
 import { useEffect } from "react";
+
+/**
+ * Auteur : JULME Marie Wilnie
+ * Date : 04/06/2022
+ * But : Ce coomposant permet d'afficher une gallerie d'image avec les images (cover) des logements
+ */
 export default function Gallery() {
     const navigate = useNavigate();
     const [dataLoaded, setDataLoaded] = useState(null);

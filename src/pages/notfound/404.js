@@ -3,6 +3,11 @@ import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 import './404.css';
 
+/**
+ * Auteur : JULME Marie Wilnie
+ * Date : 02/06/2022
+ * But : Ce coomposant permet d'afficher la page "404" de l'application
+ */
 export default function _404(){
 
     return(
