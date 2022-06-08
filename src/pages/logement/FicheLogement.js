@@ -49,20 +49,6 @@ export default function FicheLogement() {
           return ratesArr;
       }
 
-      /*
-      function getEquipmentsHtml() {
-         let equipmentsHtml = document.createElement("div");
-
-         logement.equipments.map((equipment)=>{
-             let div = document.createElement("div");
-             div.innerHTML = equipment;
-            equipmentsHtml.appendChild(div)
-         });
-
-         return equipmentsHtml;
-      }*/
-
-
     return (
         <>
         <div id="page-wrapper">
@@ -71,10 +57,9 @@ export default function FicheLogement() {
             && 
             <div className="_Body">
                 <Carousel pictures={logement.pictures}/>
-                <div className="title-logement">
-                    <h1>{logement.title}</h1>
-                    <div className="location">{logement.location}</div>
-                </div>
+                <div className="title-logement">{logement.title}</div>
+                <div className="location-logement">{logement.location}</div>
+                
                 <div className="host-logement">
                     <div className='host-name'>{logement.host.name}</div>
                     <img className='host-photo' src={logement.host.picture}></img>

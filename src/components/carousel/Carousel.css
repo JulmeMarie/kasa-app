@@ -1,15 +1,12 @@
 .carousel{
-    height: 415px;
     width: 100%;
     position: relative;
-    margin-top: 1rem;
     color: white;
 }
 
 .carousel-image{
     width: 100%;
     height: 100%;
-    border-radius: 25px;
     object-fit: cover;
     display: none;
 }
@@ -27,7 +24,6 @@
 }
 
 .direction{
-    font-size: 4rem;
     top: 50%;
     transform: translate(0%, -50%); /* décalage de 50% de sa propre taille */
     cursor: pointer;
@@ -54,5 +50,39 @@
     }
     to{
         opacity: 1;  
+    }
+}
+
+
+@media screen and (min-width: 641px) { /* Desktop */
+    .carousel{
+        height: 415px;
+        margin-top: 1rem;
+    }
+    .carousel-image{
+        border-radius: 25px;
+    }
+
+    .direction{
+        font-size: 4rem;
+
+    }
+}
+
+@media screen and (max-width: 640px) { /*Mobile*/
+    .carousel{
+        height: 15rem;
+    }
+
+    .carousel-image{
+        border-radius: 0.5rem;
+    }
+
+    .direction{
+        font-size: 2rem;
+    }
+
+    .indication{
+        display: none;
     }
 }

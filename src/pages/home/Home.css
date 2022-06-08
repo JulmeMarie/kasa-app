@@ -1,7 +1,22 @@
 .banner-home{
     background-image: url('../../../public/banner-home.jpg');
-    background-position-y: -68%;
 }
 
+@media screen and (min-width: 641px) {/* Desktop*/
+    .banner.banner-home{
+        background-position-y: 42%;
+        background-size: 100% auto;
+        
+    }
+}
 
+@media screen and (max-width: 640px) { /*Mobile*/
+
+    .banner.banner-home{
+        height: 8rem;
+        border-radius: 1rem;
+        margin-top: 0rem;
+        background-position-y: 48%;
+    }
+}
 

@@ -1,21 +1,21 @@
 nav{
-    /*
-    left: 75.08%;
-    right: 0%;
-    top: 25%;
-    bottom: 25%;*/
+    line-height: 3rem;
 
 }
+
+nav ul{
+    margin: 0; /* To remove default bottom margin */ 
+    padding: 0; /* To remove default left padding */
+}
+
 
 nav li {
     list-style: none;
     float: left;
-    width: 8rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
+    float: left;
 }
 
 nav li a{
@@ -25,4 +25,23 @@ nav li a{
 
 nav li a.active{
     text-decoration: underline;
+}
+
+
+@media screen and (min-width: 641px) {
+    nav li {
+        width: 8rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav li {
+        width: 5.5rem;
+        font-size: 0.9rem;
+    }
+
+    nav li a{
+        text-transform:uppercase;
+    }
 }

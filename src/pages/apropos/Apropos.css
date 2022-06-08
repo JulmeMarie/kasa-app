@@ -1,11 +1,28 @@
 .banner-apropos{
     background-image: url('../../../public/banner-apropos.jpg');
-    background-position-y: 37%;
 }
 
-.apropos.accordion-list{
-    margin-top: 2rem;
-    width: 80%;
 
-    margin-left: 10%;
+@media screen and (min-width: 641px) { /* Desktop */
+
+    .apropos.accordion-list{
+        margin-top: 2rem;
+        width: 80%;
+    
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 640px) { /*Mobile*/
+    .apropos.accordion-list{
+        margin-top: 1.5rem;
+    }
+
+    .banner.banner-apropos{
+        height: 15rem;
+        border-radius: 1rem;
+        margin-top: 0rem;
+        background-position-x: 85%;
+        background-size: auto 100% !important;
+    }
 }

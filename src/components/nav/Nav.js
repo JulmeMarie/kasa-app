@@ -12,7 +12,7 @@ export default function Nav(props) {
         <nav>
             <ul>
                 <li ><Link to="/" className={props.activePage === 'home' ? 'active' : ''}>Accueil</Link></li>
-                <li><Link to="/apropos" className={props.activePage === 'apropos' ? 'active' : ''}>Apropos</Link></li>
+                <li><Link to="/apropos" className={props.activePage === 'apropos' ? 'active' : ''}>A propos</Link></li>
             </ul>
         </nav>
     );

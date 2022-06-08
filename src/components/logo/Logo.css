@@ -1,49 +1,102 @@
-#logo-header .logo-k{
-    width:55px;
-    height:63px;
+@media screen and (min-width: 641px) {
+    #logo-header .logo-k{
+        width:55px;
+        height:63px;
+    }
+
+    #logo-header .logo-a1{
+        width:47px;
+        height:54px;
+    }
+
+    #logo-header .logo-s{
+        width:41px;
+        height:49px;
+    }
+
+    #logo-header .logo-a2{
+        width:42px;
+        height:49px;
+    }
+
+
+    #logo-header svg{
+        margin-right: 0.5rem;
+    }
+
+    #logo-footer .logo-k{
+        width:32px;
+        height:36px;
+    }
+
+    #logo-footer .logo-a1{
+        width:27px;
+        height:31px;
+    }
+
+    #logo-footer .logo-s{
+        width:23px;
+        height:28px;
+    }
+
+    #logo-footer .logo-a2{
+        width:24px;
+        height:28px;
+    }
+
+    #logo-footer svg{
+        margin-right: 0.2rem;
+    }
 }
 
-#logo-header .logo-a1{
-    width:47px;
-    height:54px;
-}
+@media screen and (max-width: 640px) {
+    #logo-header .logo-k{
+        width:37px;
+        height:43px;
+    }
 
-#logo-header .logo-s{
-    width:41px;
-    height:49px;
-}
+    #logo-header .logo-a1{
+        width:32px;
+        height:37px;
+    }
 
-#logo-header .logo-a2{
-    width:42px;
-    height:49px;
-}
+    #logo-header .logo-s{
+        width:27px;
+        height:33px;
+    }
+
+    #logo-header .logo-a2{
+        width:28px;
+        height:33px;
+    }
 
 
-#logo-header svg{
-    margin-right: 0.5rem;
-}
+    #logo-header svg{
+        margin-right: 0.3rem;
+    }
 
+    #logo-footer .logo-k{
+        width:32px;
+        height:36px;
+    }
 
-#logo-footer .logo-k{
-    width:32px;
-    height:36px;
-}
+    #logo-footer .logo-a1{
+        width:27px;
+        height:31px;
+    }
 
-#logo-footer .logo-a1{
-    width:27px;
-    height:31px;
-}
+    #logo-footer .logo-s{
+        width:23px;
+        height:28px;
+    }
 
-#logo-footer .logo-s{
-    width:23px;
-    height:28px;
-}
+    #logo-footer .logo-a2{
+        width:24px;
+        height:28px;
+    }
 
-#logo-footer .logo-a2{
-    width:24px;
-    height:28px;
-}
+    #logo-footer svg{
+        margin-right: 0.2rem;
+    }
 
-#logo-footer svg{
-    margin-right: 0.2rem;
 }
