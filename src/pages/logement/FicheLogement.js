@@ -1,14 +1,11 @@
-import { useParams } from 'react-router-dom';
-import { useState } from "react";
-import { useEffect } from "react";
-import {useNavigate} from 'react-router-dom';
-import Carousel from "../../components/carousel/Carousel";
+import { useParams, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react";
 import Header from "../../components/header/Header";
-import data from "../../data/logement.json";
-import './FicheLogement.css';
+import Carousel from "../../components/carousel/Carousel";
 import Accordion from '../../components/accordion/Accordion';
 import Footer from '../../components/footer/Footer';
-
+import data from "../../data/logement.json";
+import './FicheLogement.css';
 
 /**
  * Auteur : JULME Marie Wilnie
@@ -42,8 +39,9 @@ export default function FicheLogement() {
             return logement.id === id;
         });
         
+        
         ///S'il y a un élément, alors on le stocke
-        if(logementArr.length == 1) {
+        if(logementArr && logementArr.length == 1) {
             setLogement(logementArr[0]);
         }
         else {//Sinon, l'identifiant du logement n'est pas correct, on rédirige vers  404
@@ -57,7 +55,6 @@ export default function FicheLogement() {
      * @returns un tableau (array) de 5 éléments contenant des class html
      */
     function getRatesClass() {
-
         let ratesClass = Array();
 
         for(var count = 0; count < 5; count ++) {
