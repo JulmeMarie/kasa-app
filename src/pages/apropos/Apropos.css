@@ -24,7 +24,7 @@
 
     .banner.banner-apropos{
         height: 15rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         margin-top: 0rem;
         background-position-x: 85%;
         background-size: auto 100% !important;
