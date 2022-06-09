@@ -10,7 +10,7 @@ import Nav from '../nav/Nav';
 export default function Header(props) {
     
     return (
-        <header>
+        <header className='_Header'>
             <Logo logoId='logo-header'/>
             <Nav activePage={props.activePage}/>
         </header>

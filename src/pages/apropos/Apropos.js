@@ -13,25 +13,25 @@ import { staticData } from "../../Util";
 export default function Apropos() {
     return (
         <>
-        <div id="page-wrapper">
             <Header activePage='apropos'/>
-            <Banner bannerClass='banner-apropos'/>
-            <div className="apropos accordion-list">
-                <div className='fiability-accordion'>
-                    <Accordion header="Fiabilité" body={[staticData.fiability]}/>
+            <section className="_Body">
+                <Banner bannerClass='banner-apropos'/>
+                <div className="apropos accordion-list">
+                    <div className='fiability-accordion'>
+                        <Accordion header="Fiabilité" body={[staticData.fiability]}/>
+                    </div>
+                    <div className='respect-accordion'>
+                        <Accordion header="Respect" body={[staticData.respect]}/>
+                    </div>
+                    <div className='service-accordion'>
+                        <Accordion header="Service" body={[staticData.service]}/>
+                    </div>
+                    <div className='security-accordion'>
+                        <Accordion header="Sécurité" body={[staticData.security]}/>
+                    </div>
                 </div>
-                <div className='respect-accordion'>
-                    <Accordion header="Respect" body={[staticData.respect]}/>
-                </div>
-                <div className='service-accordion'>
-                    <Accordion header="Service" body={[staticData.service]}/>
-                </div>
-                <div className='security-accordion'>
-                    <Accordion header="Sécurité" body={[staticData.security]}/>
-                </div>
-            </div>
-        </div>
-        <Footer />
+            </section>
+            <Footer />
         </>
     )
 }

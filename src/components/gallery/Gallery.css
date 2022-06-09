@@ -7,7 +7,7 @@
 }
 
 .gallery-item{
-    background: linear-gradient(180deg, rgba(255,96,96,0.9) 50%, rgba(0, 0, 0, 0.7) 120%);
+    /*background: linear-gradient(180deg, rgba(255,96,96,0.9) 50%, rgba(0, 0, 0, 0.7) 120%);*/
     position: relative;
     cursor: pointer;
 }
@@ -40,7 +40,7 @@
         width: 27%;
         height: 20rem;
         margin-bottom: 4%;
-        border-radius: 3%;
+        border-radius: 4%;
     }
 }
 

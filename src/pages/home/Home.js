@@ -14,11 +14,11 @@ export default function Home() {
 
     return (
         <>
-            <div id="page-wrapper">
-                <Header activePage='home'/>
+            <Header activePage='home'/>
+            <section className="_Body">
                 <Banner bannerClass='banner-home' bannerText='Chez vous, partout et ailleurs'/>
                 <Gallery />
-            </div>
+            </section>
             <Footer />
         </>
     )

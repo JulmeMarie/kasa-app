@@ -1,6 +1,7 @@
 header{
     /*width: 1240px;*/
-   
+    max-width: 90vw;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

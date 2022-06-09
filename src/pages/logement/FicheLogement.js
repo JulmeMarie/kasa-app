@@ -65,12 +65,11 @@ export default function FicheLogement() {
 
     return (
         <>
-            <div id="page-wrapper">
-                <Header activePage='fichelogment'/>
-                
-                { //Conditionne l'affichage du bloc en fonction du logement (si nul, le bloc suivant ne s'affiche pas)
+            <Header activePage='fichelogment'/>
+            <section className="_Body">
+                 { //Conditionne l'affichage du bloc en fonction du logement (si nul, le bloc suivant ne s'affiche pas)
                     logement && 
-                    <div className="_Body">
+                    <>
                         <Carousel pictures={logement.pictures}/>
                         <div className="title-logement">{logement.title}</div>
                         <div className="location-logement">{logement.location}</div>
@@ -103,9 +102,9 @@ export default function FicheLogement() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </>
                 }
-            </div>
+            </section>
             <Footer />
         </>
     )
