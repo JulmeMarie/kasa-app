@@ -12,12 +12,12 @@ export default function Error404(){
 
     return(
         <>
-            <div id="page-wrapper">
-                <Header activePage='404'/>
+            <Header activePage='404'/>
+            <section className="_Body">
                 <div className="text-404">404</div>
                 <div className="description-404">Oups! La page que vous demandez n'existe pas.</div>
                 <div className="link-404"> <Link to="/" >Retourner sur la page d’accueil</Link></div>
-            </div>
+            </section>
             <Footer />
         </>
     );
