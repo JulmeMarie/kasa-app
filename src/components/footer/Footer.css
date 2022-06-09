@@ -12,6 +12,16 @@ footer{
     line-height: 3.5rem;
 }
 
-.text-footer{
-    font-size: 1.3rem;
+
+
+@media screen and (min-width: 641px) {
+    .text-footer{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text-footer{
+        font-size: 1rem;
+    }
 }

@@ -10,8 +10,8 @@
 }
 
 .link-404 {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
     width: 100%;
     text-align: center;
 }
@@ -24,7 +24,7 @@
 @media screen and (min-width: 641px) {/* Desktop*/
     .text-404 {
         width: 100%;
-        font-size: 20rem;
+        font-size: 18rem;
     }
     
     .description-404 {
@@ -43,7 +43,8 @@
     .description-404 {
         margin-top: 1rem;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
     }
     
 }
