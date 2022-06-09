@@ -10,27 +10,50 @@ import { useEffect } from "react";
  * But : Ce coomposant permet d'afficher une gallerie d'image avec les images (cover) des logements
  */
 export default function Gallery() {
+
     const navigate = useNavigate();
+
+    //Stockage et mise à jours des données
     const [dataLoaded, setDataLoaded] = useState(null);
 
+    /**
+     * Permet d'acouter les clicks sur l'image du logement (cover)
+     * @param {*} id 
+     */
     const handleClick = (id) => {
         navigate(`/logement/${id}`);
     };
 
     useEffect(() => {
-        //ici on va mettre les requête http pour accéder à la base de données
-        setDataLoaded(data);
+        /*Ici la requête http qui récupére les logements dans la base de données (quand on a le back-end)
+
+         // GET request using fetch with set headers
+         
+         const headers = { 'Content-Type': 'application/json' }
+
+         fetch('https://api/logements/', { headers })
+        .then(response => response.json())
+        .then(data => setDataLoaded(data.logement))
+        .catch(error => {
+            navigate(`/404/`);
+        };
+
+        */
+
+        setDataLoaded(data);//Récupération des données dans JSON
       }, []);
    
     return(
-    <section className='gallery'>
-        {dataLoaded && dataLoaded.map(logement => 
-            <div className="gallery-item" key={logement.id} onClick={()=>handleClick(logement.id)}>
-                <img className='gallery-item-image' src={logement.cover}></img>
-                <span className="gallery-item-text">{logement.title}</span>
-            </div>
-            )
-        }
-    </section>
+        <section className='gallery'>
+            {
+                dataLoaded && 
+                dataLoaded.map(logement => 
+                    <div className="gallery-item" key={logement.id} onClick={()=>handleClick(logement.id)}>
+                        <img className='gallery-item-image' src={logement.cover}></img>
+                        <span className="gallery-item-text">{logement.title}</span>
+                    </div>
+                )
+            }
+        </section>
    )
 }
