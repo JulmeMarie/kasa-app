@@ -21,13 +21,13 @@ export default function Apropos() {
                     <Accordion header="Fiabilité" body={[staticData.fiability]}/>
                 </div>
                 <div className='respect-accordion'>
-                        <Accordion header="Respect" body={[staticData.respect]}/>
+                    <Accordion header="Respect" body={[staticData.respect]}/>
                 </div>
                 <div className='service-accordion'>
                     <Accordion header="Service" body={[staticData.service]}/>
                 </div>
                 <div className='security-accordion'>
-                        <Accordion header="Sécurité" body={[staticData.security]}/>
+                    <Accordion header="Sécurité" body={[staticData.security]}/>
                 </div>
             </div>
         </div>

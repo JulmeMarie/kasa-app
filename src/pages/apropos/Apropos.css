@@ -2,6 +2,10 @@
     background-image: url('../../../public/banner-apropos.jpg');
 }
 
+.apropos .accordion{
+    margin-bottom: 1.5rem;
+ }
+
 
 @media screen and (min-width: 641px) { /* Desktop */
 

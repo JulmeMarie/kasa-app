@@ -11,14 +11,15 @@ import './Home.css';
  * But : Ce coomposant sert à afficher la page d'accueil
  */
 export default function Home() {
+
     return (
         <>
-        <div id="page-wrapper">
-             <Header activePage='home'/>
-             <Banner bannerClass='banner-home' bannerText='Chez vous, partout et ailleurs'/>
-             <Gallery />
-        </div>
-        <Footer />
+            <div id="page-wrapper">
+                <Header activePage='home'/>
+                <Banner bannerClass='banner-home' bannerText='Chez vous, partout et ailleurs'/>
+                <Gallery />
+            </div>
+            <Footer />
         </>
     )
 }

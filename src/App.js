@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
-import _404 from './pages/notfound/404.js';
+import _404 from './pages/404/404.js';
 import Home from './pages/home/Home.js';
 import Apropos from './pages/apropos/Apropos';
 import FicheLogement from './pages/logement/FicheLogement';

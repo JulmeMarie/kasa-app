@@ -9,13 +9,10 @@
     text-align: left;
 }
 
+.content-logement .accordion{
+    margin-bottom: 1.5rem;
+ }
 
-
-.host-photo{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
 
 .host-logement{
     position: absolute;
@@ -23,6 +20,10 @@
     width: fit-content;
     display: flex;
     flex-direction: row;
+}
+
+.host-name{
+ text-align: right;
 }
 
 .rate-logement{
@@ -38,6 +39,18 @@
     display: flex;
     flex-direction: row;
     max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.tag{
+    background-color: #FF6060;
+    color: white;
+    margin-right: 1rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .content-logement .accordion-list{
@@ -84,8 +97,14 @@
       }
 
       .host-name{
-        line-height: 60px;
+        margin-top: 0.1rem;
         margin-right: 1rem;
+        max-width: 4.5rem;
+    }
+    .host-photo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
     }
 
     .rate-logement i{
@@ -109,6 +128,13 @@
         margin-top: 4rem;
     }
 
+    .tag-list{
+        max-width: 100% !important;
+    }
+    .tag{
+        margin-top: 0.2rem;
+    }
+
     .content-logement{
         margin-top: 1rem;
     }
@@ -119,7 +145,7 @@
     }
 
     .content-logement .accordion-list{
-        margin-top: 7rem;
+        margin-top: 5rem;
     }
 
     .description-accordion{
@@ -130,9 +156,15 @@
       }
 
       .host-name{
-          margin-top: 0.5rem;
-        margin-right: 1rem;
-        width: 4.5rem;
+          margin-top: 0.1rem;
+        margin-right: 0.5rem;
+        max-width: 4.5rem;
+        font-size: 0.9rem;
+    }
+    .host-photo{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
     }
 
     .rate-logement i{
