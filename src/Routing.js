@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error404 from './pages/error404/Error404.js';
 import Home from './pages/home/Home.js';
 import Apropos from './pages/apropos/Apropos';
-import FicheLogement from './pages/logement/FicheLogement';
+import FicheLogement from './pages/ficheLogement/FicheLogement';
 
 /**
  * Auteur : JULME Marie Wilnie
