@@ -1,4 +1,4 @@
-import './Accordion.css';
+import './Dropdown.css';
 import { useState } from 'react';
 
 /**
@@ -6,7 +6,7 @@ import { useState } from 'react';
  * Date : 05/06/2022
  * But : Ce coomposant permet d'afficher les déroulants de l'application
  */
-export default function Accordion(props) {
+export default function Dropdown(props) {
 
     //Possibilité de stockage et de mise à jour du statut de l'accordeon (ouvert/fermé)
     const [status, setStatus] = useState("close"); 
@@ -17,15 +17,15 @@ export default function Accordion(props) {
     };
 
     return (
-        <div className='accordion'>
-            <div className='accordion-header' onClick={handleClick}>
-                <span className="accordion-header-text">{props.header}</span> 
+        <div className='dropdown'>
+            <div className='dropdown-header' onClick={handleClick}>
+                <span className="dropdown-header-text">{props.header}</span> 
                 <i className={status === 'close' ? 'fa fa-chevron-down':'fa fa-chevron-up'}  ></i>
             </div>
             {   
                 //Condition pour afficher le body de l'accordeon
                 status ==='open' &&
-                <div className='accordion-body'>
+                <div className='dropdown-body'>
                 {
                     props.body.map((element, index)=>{
                         return <div key={index}>{element}</div>

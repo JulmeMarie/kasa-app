@@ -2,14 +2,14 @@
     background-image: url('../../../public/banner-apropos.jpg');
 }
 
-.apropos .accordion{
+.apropos .dropdown{
     margin-bottom: 1.5rem;
  }
 
 
 @media screen and (min-width: 641px) { /* Desktop */
 
-    .apropos.accordion-list{
+    .apropos.dropdown-list{
         margin-top: 2rem;
         width: 80%;
     
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 640px) { /*Mobile*/
-    .apropos.accordion-list{
+    .apropos.dropdown-list{
         margin-top: 1.5rem;
     }
 

@@ -9,10 +9,9 @@
     text-align: left;
 }
 
-.content-logement .accordion{
+.content-logement .dropdown{
     margin-bottom: 1.5rem;
  }
-
 
 .host-logement{
     position: absolute;
@@ -53,7 +52,7 @@
     padding-right: 1rem;
 }
 
-.content-logement .accordion-list{
+.content-logement .dropdown-list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,14 +84,14 @@
         margin-top: 2rem;
     }
 
-    .content-logement .accordion-list{
+    .content-logement .dropdown-list{
         margin-top: 2rem;
     }
 
-    .description-accordion{
+    .description-dropdown{
         width: 45%;
       }
-      .equipement-accordion{
+      .equipement-dropdown{
           width: 45%;
       }
 
@@ -144,14 +143,14 @@
         margin-top: 5rem;
     }
 
-    .content-logement .accordion-list{
+    .content-logement .dropdown-list{
         margin-top: 5rem;
     }
 
-    .description-accordion{
+    .description-dropdown{
         width: 100%;
       }
-      .equipement-accordion{
+      .equipement-dropdown{
           width: 100%;
       }
 

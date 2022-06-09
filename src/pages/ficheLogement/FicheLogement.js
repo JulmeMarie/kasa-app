@@ -1,8 +1,9 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from "react";
+
 import Header from "../../components/header/Header";
 import Carousel from "../../components/carousel/Carousel";
-import Accordion from '../../components/accordion/Accordion';
+import Dropdown from '../../components/dropdown/Dropdown';
 import Footer from '../../components/footer/Footer';
 import data from "../../data/logement.json";
 import './FicheLogement.css';
@@ -15,7 +16,7 @@ import './FicheLogement.css';
 export default function FicheLogement() {
     const { id } = useParams(); // Récupération de l'identifiant du logement dans l'url
     const navigate = useNavigate(); //Permet de rédiriger l'utilisateur si besoin
-    const [logement, setLogement] = useState(null); //Permet de stocker un objet logement
+    const [logement, setLogement] = useState(null); //Permet de stocker/mettre à jour un objet logement
 
     
     useEffect(() => {
@@ -48,7 +49,6 @@ export default function FicheLogement() {
             navigate(`/404/`);
         }
     }, []);
-
 
     /**
      * Cette fonction permet d'avoir un tableau indiquant la classe html à attribuer aux étoiles d'un logement
@@ -93,12 +93,12 @@ export default function FicheLogement() {
                                 })
                             }
                             </div>
-                            <div className="accordion-list">
-                                <div className='description-accordion'>
-                                    <Accordion header="Description" body={[logement.description]}/>
+                            <div className="dropdown-list">
+                                <div className='description-dropdown'>
+                                    <Dropdown header="Description" body={[logement.description]}/>
                                 </div>
-                                <div className='equipement-accordion'>
-                                    <Accordion header="Equipements" body={logement.equipments}/>
+                                <div className='equipement-dropdown'>
+                                    <Dropdown header="Equipements" body={logement.equipments}/>
                                 </div>
                             </div>
                         </div>

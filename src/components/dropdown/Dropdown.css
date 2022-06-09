@@ -1,8 +1,8 @@
-.accordion{
+.dropdown{
    width: 100%;
 }
 
-.accordion-header{
+.dropdown-header{
    background-color: #FF6060;
    color: white;
    position: relative;
@@ -10,35 +10,35 @@
    cursor: pointer;
 }
 
-.accordion-body{
+.dropdown-body{
    color: #FF6060;
    background-color: #F6F6F6;
    border-radius: 0.4rem;
    margin-top: -0.4rem;
 }
 
-.accordion-header-text{
+.dropdown-header-text{
    font-size: 1.1rem;
 }
 
-.accordion-header i{
+.dropdown-header i{
     position: absolute;
     right: 1rem;
 }
 
 @media screen and (min-width: 641px) { /* Desktop */
-   .accordion-header{
+   .dropdown-header{
       border-radius: 0.4rem;
       height: 3rem;
       line-height: 3rem;
    }
 
-   .accordion-header i{
+   .dropdown-header i{
       font-size: 2rem;
       line-height: 3rem; 
    }
 
-   .accordion-body{
+   .dropdown-body{
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       padding-left: 1rem;
@@ -50,18 +50,18 @@
 
 @media screen and (max-width: 640px) { /*Mobile*/
 
-   .accordion-header{
+   .dropdown-header{
       border-radius: 0.2rem;
       height: 2.5rem;
       line-height: 2.5rem;
    }
 
-   .accordion-header i{
+   .dropdown-header i{
       font-size: 1.5rem;
       line-height: 2.5rem; 
    }
 
-   .accordion-body{
+   .dropdown-body{
       padding-top: 1rem;
       padding-bottom: 1rem;
       padding-left: 1rem;

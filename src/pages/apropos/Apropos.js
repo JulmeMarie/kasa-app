@@ -1,6 +1,6 @@
 import Header from "../../components/header/Header";
 import Banner from "../../components/banner/Banner";
-import Accordion from "../../components/accordion/Accordion";
+import Dropdown from "../../components/dropdown/Dropdown";
 import './Apropos.css';
 import Footer from "../../components/footer/Footer";
 import { staticData } from "../../Util";
@@ -16,18 +16,18 @@ export default function Apropos() {
             <Header activePage='apropos'/>
             <section className="_Body">
                 <Banner bannerClass='banner-apropos'/>
-                <div className="apropos accordion-list">
-                    <div className='fiability-accordion'>
-                        <Accordion header="Fiabilité" body={[staticData.fiability]}/>
+                <div className="apropos dropdown-list">
+                    <div className='fiability-dropdown'>
+                        <Dropdown header="Fiabilité" body={[staticData.fiability]}/>
                     </div>
-                    <div className='respect-accordion'>
-                        <Accordion header="Respect" body={[staticData.respect]}/>
+                    <div className='respect-dropdown'>
+                        <Dropdown header="Respect" body={[staticData.respect]}/>
                     </div>
-                    <div className='service-accordion'>
-                        <Accordion header="Service" body={[staticData.service]}/>
+                    <div className='service-dropdown'>
+                        <Dropdown header="Service" body={[staticData.service]}/>
                     </div>
-                    <div className='security-accordion'>
-                        <Accordion header="Sécurité" body={[staticData.security]}/>
+                    <div className='security-dropdown'>
+                        <Dropdown header="Sécurité" body={[staticData.security]}/>
                     </div>
                 </div>
             </section>
