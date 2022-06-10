@@ -2,26 +2,24 @@
     background-image: url('../../../public/banner-apropos.jpg');
 }
 
-.apropos .dropdown{
-    margin-bottom: 1.5rem;
+
+ .apropos.dropdown-list>div{
+     width: 100%;
  }
 
 
 @media screen and (min-width: 641px) { /* Desktop */
 
     .apropos.dropdown-list{
-        margin-top: 2rem;
         width: 80%;
-    
         margin-left: 10%;
     }
+    .apropos .dropdown{
+        margin-top: 2rem;
+     }
 }
 
 @media screen and (max-width: 640px) { /*Mobile*/
-    .apropos.dropdown-list{
-        margin-top: 1.5rem;
-    }
-
     .banner.banner-apropos{
         height: 15rem;
         border-radius: 0.5rem;
@@ -29,4 +27,7 @@
         background-position-x: 85%;
         background-size: auto 100% !important;
     }
+    .apropos .dropdown{
+        margin-top: 1.5rem;
+     }
 }

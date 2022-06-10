@@ -58,7 +58,7 @@ export default function FicheLogement() {
         let ratesClass = Array();
 
         for(var count = 0; count < 5; count ++) {
-            ratesClass[count] = count < logement.rating ? "fa fa-star" :  "fa fa-star-o";
+            ratesClass[count] = count < logement.rating ? "fa fa-star active" :  "fa fa-star";
         }
         return ratesClass;
     }
@@ -71,21 +71,22 @@ export default function FicheLogement() {
                     logement && 
                     <>
                         <Carousel pictures={logement.pictures}/>
-                        <div className="title-logement">{logement.title}</div>
-                        <div className="location-logement">{logement.location}</div>
-                        
-                        <div className="host-logement">
-                            <div className='host-name'>{logement.host.name}</div>
-                            <img className='host-photo' src={logement.host.picture}></img>
-                        </div>
-                        <div className="rate-logement">
-                            { //Affichage de la liste d'étoiles
-                                getRatesClass().map((htmlClass, index) => {
-                                    return <i className={htmlClass} key={index}></i>
-                                })
-                            }
-                        </div>
-                        <div className="content-logement">
+                        <section className='fichelogement flex-wrapper'>
+                            <div className="title-logement">{logement.title}</div>
+                            <div className="location-logement">{logement.location}</div>
+                            
+                            <div className="host-logement">
+                                <div className='host-name'>{logement.host.name}</div>
+                                <img className='host-photo' src={logement.host.picture}></img>
+                            </div>
+                            <div className="rate-logement">
+                                { //Affichage de la liste d'étoiles
+                                    getRatesClass().map((htmlClass, index) => {
+                                        return <i className={htmlClass} key={index}></i>
+                                    })
+                                }
+                            </div>
+                            
                             <div className='tag-list'>
                             {//Affichage de la liste des tags
                                 logement.tags.map((tag, index)=>{
@@ -101,7 +102,8 @@ export default function FicheLogement() {
                                     <Dropdown header="Equipements" body={logement.equipments}/>
                                 </div>
                             </div>
-                        </div>
+                           
+                        </section>
                     </>
                 }
             </section>

@@ -3,41 +3,52 @@
     color: #FF6060;
 }
 
-.title-logement{
-    margin-left: 0rem;
-    width: fit-content;
-    text-align: left;
+.flex-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
-.content-logement .dropdown{
-    margin-bottom: 1.5rem;
- }
+.title-logement{
+    text-align: left;
+    order:1;
+}
+
+.location-logement {
+    text-align: left;
+    width: 100%;
+}
 
 .host-logement{
-    position: absolute;
-    right: 0rem;
     width: fit-content;
     display: flex;
     flex-direction: row;
 }
+
+.rate-logement{
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+.fichelogement .dropdown-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
 .host-name{
  text-align: right;
 }
 
-.rate-logement{
-    position: absolute;
-    z-index: 100;
-}
-
-.content-logement{
-    width: 100%;
-}
-
 .tag-list{
     display: flex;
     flex-direction: row;
-    max-width: 80%;
     flex-wrap: wrap;
 }
 
@@ -50,42 +61,53 @@
     border-radius: 10px;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.content-logement .dropdown-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
+.fichelogement .dropdown-list {
+    order: 6;
+}
+
+.rate-logement i{
+    color: #E3E3E3;       
+}
+
+.rate-logement i.active{
+    color: #FF6060;
 }
 
 
 @media screen and (min-width: 641px) { /* Desktop */
     .title-logement{
         font-size: 2.5rem;
-        margin-top: 2rem;
+        width: 80%;
+    }
+    .host-logement{
+        order: 2;
+        width: 20%;
+        justify-content: right;
     }
 
     .location-logement{
-        margin-top: 0.5rem;
         font-size: 1.2rem;
+        order:3;
     }
 
-    .host-logement{
-        margin-top: -4rem;
-    }
-    .content-logement{
-        margin-top: 3rem;
+    .tag-list{
+        order: 4;
+        width: 80%;
+        padding-top: 1rem;
     }
 
     .rate-logement{
-        right: 0;
-        margin-top: 2rem;
+       order: 5;
+       width: 20%;
+       justify-content: right;
+       padding-top: 0.5rem;
     }
 
-    .content-logement .dropdown-list{
-        margin-top: 2rem;
+    .fichelogement .dropdown-list{
+        padding-top: 1.5rem;
     }
 
     .description-dropdown{
@@ -109,49 +131,54 @@
     .rate-logement i{
         font-size: 1.5rem;
         margin-left: 0.5rem;
-       }
-       
+       }   
 }
 
 @media screen and (max-width: 640px) { /*Mobile*/
     .title-logement{
         font-size: 1.5rem;
-        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .host-logement{
+        order: 5;
+        width: 50%;
+        justify-content: right;
+        padding-top: 1rem;
     }
 
     .location-logement{
-        margin-top: 0.5rem;
+        order:2;
         font-size: 1rem;
-    }
-    .host-logement{
-        margin-top: 4rem;
+        width: 100%;
+        padding-top: 0.5rem;
     }
 
     .tag-list{
-        max-width: 100% !important;
+        width: 100%;
+        order: 3;
+        padding-top: 0.5rem;
     }
+
     .tag{
         margin-top: 0.2rem;
     }
 
-    .content-logement{
-        margin-top: 1rem;
-    }
 
     .rate-logement{
-        left: 0;
-        margin-top: 5rem;
+        order: 4;
+        width: 50%;
+        padding-top: 1.5rem;
     }
 
-    .content-logement .dropdown-list{
-        margin-top: 5rem;
-    }
 
     .description-dropdown{
         width: 100%;
+        padding-top: 1rem;
       }
       .equipement-dropdown{
           width: 100%;
+          padding-top: 1rem;
       }
 
       .host-name{

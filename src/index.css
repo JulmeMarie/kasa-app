@@ -18,5 +18,5 @@ body {
   max-width: 90vw;
   margin: auto;
   height: fit-content;
-  min-height: 70vh;
+  /*min-height: 70vh;*/
 }
