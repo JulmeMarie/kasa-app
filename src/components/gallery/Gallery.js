@@ -7,7 +7,7 @@ import { useEffect } from "react";
 /**
  * Auteur : JULME Marie Wilnie
  * Date : 04/06/2022
- * But : Ce coomposant permet d'afficher une gallerie d'image avec les images (cover) des logements
+ * But : Ce composant permet d'afficher une gallerie d'image avec les images (cover) des logements
  */
 export default function Gallery() {
 

@@ -11,7 +11,7 @@ import './FicheLogement.css';
 /**
  * Auteur : JULME Marie Wilnie
  * Date : 02/06/2022
- * But : Ce coomposant permet d'afficher la page "fiche logement" de l'application
+ * But : Ce composant permet d'afficher la page "fiche logement" de l'application
  */
 export default function FicheLogement() {
     const { id } = useParams(); // Récupération de l'identifiant du logement dans l'url

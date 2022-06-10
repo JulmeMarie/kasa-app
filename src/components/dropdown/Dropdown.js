@@ -4,7 +4,7 @@ import { useState } from 'react';
 /**
  * Auteur : JULME Marie Wilnie
  * Date : 05/06/2022
- * But : Ce coomposant permet d'afficher les déroulants de l'application
+ * But : Ce composant permet d'afficher les déroulants de l'application
  */
 export default function Dropdown(props) {
 
