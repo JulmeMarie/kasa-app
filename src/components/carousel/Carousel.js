@@ -23,7 +23,7 @@ export default function Carousel(props) {
         if(imageIndex < 0 ){ //Si l'index < 0, alors on stocke le dernier index du tableau
             setCurrentImageIndex(props.pictures.length-1);
         }
-        else if(imageIndex >= props.pictures.length) { //Si l'index > à lal ongeur du tableau, alors on stock le premier index du tableau
+        else if(imageIndex >= props.pictures.length) { //Si l'index > à la longeur du tableau, alors on stock le premier index du tableau
             setCurrentImageIndex(0);
         }
         else{//Sinon on est dans le cas normal

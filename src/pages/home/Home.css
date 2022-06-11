@@ -1,5 +1,5 @@
 .banner-home{
-    background-image: url('../../../public/banner-home.jpg');
+    background-image: url('../../../public/images/banner-home.jpg');
 }
 
 @media screen and (min-width: 641px) {/* Desktop*/
