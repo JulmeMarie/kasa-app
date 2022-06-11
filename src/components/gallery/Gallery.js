@@ -6,9 +6,9 @@ import { useState } from 'react';
 import { useEffect } from "react";
 
 /**
+ * Description : Ce composant permet d'afficher une gallerie d'image avec les images (cover) des logements
  * Auteur : JULME Marie Wilnie
  * Date : 04/06/2022
- * But : Ce composant permet d'afficher une gallerie d'image avec les images (cover) des logements
  */
 export default function Gallery() {
 

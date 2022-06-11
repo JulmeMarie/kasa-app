@@ -3,9 +3,9 @@ import { useState } from "react";
 
 
 /**
+ * Description : Ce composant permet d'afficher un carousel avec les images d'un logement
  * Auteur : JULME Marie Wilnie
  * Date : 04/06/2022
- * But : Ce composant permet d'afficher un carousel avec les images d'un logement
  */
 export default function Carousel(props) {
 

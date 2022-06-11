@@ -2,9 +2,9 @@ import './Dropdown.css';
 import { useState } from 'react';
 
 /**
+ * Description : Ce composant permet d'afficher les déroulants de l'application
  * Auteur : JULME Marie Wilnie
  * Date : 05/06/2022
- * But : Ce composant permet d'afficher les déroulants de l'application
  */
 export default function Dropdown(props) {
 

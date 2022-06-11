@@ -2,9 +2,9 @@ import './Nav.css';
 import { Link } from "react-router-dom";
 
 /**
+ * Description : Ce composant permet d'afficher les boutons de navigation de l'application
  * Auteur : JULME Marie Wilnie
  * Date : 03/06/2022
- * But : Ce composant permet d'afficher les boutons de navigation de l'application
  */
 export default function Nav(props) {
     

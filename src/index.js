@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Routing from './Routing';
 
 /**
+ * Ici le point d'entrée de l'application
  * Auteur : JULME Marie Wilnie
  * Date : 02/06/2022
  */

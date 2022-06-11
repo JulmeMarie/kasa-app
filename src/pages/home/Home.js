@@ -6,9 +6,9 @@ import Footer from "../../components/footer/Footer";
 import './Home.css';
 
 /**
+ * Description : Ce composant sert à afficher la page d'accueil
  * Auteur : JULME Marie Wilnie
  * Date : 02/06/2022
- * But : Ce composant sert à afficher la page d'accueil
  */
 export default function Home() {
 

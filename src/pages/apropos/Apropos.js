@@ -6,9 +6,9 @@ import Footer from "../../components/footer/Footer";
 
 
 /**
+ * Description : Ce composant permet d'afficher la page "apropos" de l'application
  * Auteur : JULME Marie Wilnie
  * Date : 02/06/2022
- * But : Ce composant permet d'afficher la page "apropos" de l'application
  */
 export default function Apropos() {
 

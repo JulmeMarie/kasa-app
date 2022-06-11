@@ -9,9 +9,9 @@ import data from "../../data/logement.json";
 import './FicheLogement.css';
 
 /**
+ * Description : Ce composant permet d'afficher la page "fiche logement" de l'application
  * Auteur : JULME Marie Wilnie
  * Date : 02/06/2022
- * But : Ce composant permet d'afficher la page "fiche logement" de l'application
  */
 export default function FicheLogement() {
     const { id } = useParams(); // Récupération de l'identifiant du logement dans l'url

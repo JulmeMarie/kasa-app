@@ -5,6 +5,7 @@ import Apropos from './pages/apropos/Apropos';
 import FicheLogement from './pages/ficheLogement/FicheLogement';
 
 /**
+ * Description : Ce composant permet de gérer les routes (url)
  * Auteur : JULME Marie Wilnie
  * Date : 09/06/2022
  */

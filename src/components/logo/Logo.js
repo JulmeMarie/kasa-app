@@ -1,9 +1,9 @@
 import './Logo.css';
 
 /**
+ * Description : Ce composant permet d'afficher le logo de l'application
  * Auteur : JULME Marie Wilnie
  * Date : 03/06/2022
- * But : Ce composant permet d'afficher le logo de l'application
  */
 export default function Logo(props) {
     const salmonColor = "#FF6060";
