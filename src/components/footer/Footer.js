@@ -6,7 +6,7 @@ import Logo from '../logo/Logo';
  * Auteur : JULME Marie Wilnie
  * Date : 03/06/2022
  */
-export default function Footer(props) {
+export default function Footer() {
     
     return (
         <footer className='_Footer'>

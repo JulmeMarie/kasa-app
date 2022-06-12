@@ -15,6 +15,6 @@ export default function Header(props) {
             <Nav activePage={props.activePage}/>
         </header>
     )
-}
+} 
 
 
