@@ -20,21 +20,7 @@ export default function FicheLogement() {
 
     
     useEffect(() => {
-        /*Ici la requête http qui récupére le logement dans la base de données (quand on a le back-end)
-
-         // GET request using fetch with set headers
-         
-         const headers = { 'Content-Type': 'application/json' }
-
-         fetch('https://api/logement?id=id', { headers })
-        .then(response => response.json())
-        .then(data => setLogement(data.logement))
-        .catch(error => {
-            navigate(`/logement/`);
-        };
-
-        */
-
+    
         //Filtrer pour récupérer le logement par son id
         let logementArr = data.filter(logement =>{
             return logement.id === id;

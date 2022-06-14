@@ -26,21 +26,6 @@ export default function Gallery() {
     };
 
     useEffect(() => {
-        /*Ici la requête http qui récupére les logements dans la base de données (quand on a le back-end)
-
-         // GET request using fetch with set headers
-         
-         const headers = { 'Content-Type': 'application/json' }
-
-         fetch('https://url-to-backend/logements/', { headers })
-        .then(response => response.json())
-        .then(data => setDataLoaded(data.logements))
-        .catch(error => {
-            navigate(`/404/`);
-        };
-
-        */
-
         setDataLoaded(data);//Récupération des données dans JSON
       }, []);
    
@@ -50,7 +35,7 @@ export default function Gallery() {
                 dataLoaded && 
                 dataLoaded.map(logement => 
                     <div className="gallery-item" key={logement.id} onClick={()=>handleClick(logement.id)}>
-                        <img className='gallery-item-image' src={logement.cover} />
+                        <img className='gallery-item-image' src={logement.cover} alt={logement.title}/>
                         <span className="gallery-item-text">{logement.title}</span>
                     </div>
                 )

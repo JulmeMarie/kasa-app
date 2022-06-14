@@ -37,11 +37,11 @@
     }
 
     .gallery-item{
-        width: 27%;
-        height: 20rem;
+        width: 28%;
+        height: 21rem;
         margin-bottom: 4%;
         border-radius: 0.5rem;
-        margin-left: 4.75%;
+        margin-left: 4%;
     }
 }
 
